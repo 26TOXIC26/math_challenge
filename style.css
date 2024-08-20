@@ -1,25 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body
+{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0D1B2A;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 #bet
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    height: 100px;
+    background-color: #0D1B2A;
+    
+    color: #E0E1DD;
+    border: 1px solid #E0E1DD;
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+    /* box-shadow: #778DA9 5px 5px 5px; */
 }
 
 #in-bet
 {
-    border: none;
-    border-bottom: 1px solid black;
+    border: 1px solid #E0E1DD;
     margin-bottom: 15px;
     width: 150px;
-}
-
-#get-bet
-{
-    width: 70px;
     height: 40px;
     border-radius: 10px;
+    background-color: transparent;
+    text-align: center;
+    width: 250px;
+    color: #E0E1DD;
+    font-size: larger;
+}
+
+#in-bet::placeholder
+{
+    color: #b6b6b6;
 }
 
 #bu
@@ -27,15 +52,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 150px;
-
+    width: 250px;
+    margin-top: 15px;
 }
 
-#reload
+#bu button
 {
-    width: 70px;
+    width: 110px;
     height: 40px;
+    border: None;
     border-radius: 10px;
+    background-color: #E0E1DD;
+}
+
+#bu button:hover
+{
+    background-color: #0D1B2A;
+    border: 1px solid #E0E1DD;
+    color: #E0E1DD;
 }
 
 #result
@@ -48,4 +82,89 @@
 #math
 {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    border-radius: 10px;
 }
+
+#math h1
+{
+    font-size: 50px;
+}
+
+#score
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    position: fixed;
+    color: #E0E1DD;
+    /* background-color: #415A77; */
+    border: #E0E1DD 1px solid;
+    font-size: x-small;
+    border-radius: 10px;
+    top: 2%;
+    left: 2%;
+}
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.container {
+    position: fixed;
+    width: 250px;
+    bottom: 2%;
+    left: 2%;
+   /*  choose your size */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .container button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #313638;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 26px;
+    height: 26px;
+    fill: #fff;
+  }
+  
+  .container button:nth-child(1):hover {
+    background-color: #2753a7;
+  }
+  
+  .container button:nth-child(2):hover {
+    background-color: #E1306C;
+  }
+  
+  .container button:nth-child(3):hover {
+    background-color: #55acee;
+  }
+  
+  .container button:nth-child(4):hover {
+    background-color: #000000;
+  }
+  
+  .title {
+    color: #E0E1DD;
+    font-weight: 700;
+    font-size: 17px;
+    position: absolute;
+    top: -35px;
+    left: 0;
+  }
+
+  a
+  {
+    width: 100%;
+    height: 100%;
+  }

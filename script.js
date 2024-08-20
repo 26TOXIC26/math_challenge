@@ -11,7 +11,7 @@ document.getElementById("math-num1").textContent = Math.floor(Math.random() * 10
 document.getElementById("math-num2").textContent = Math.floor(Math.random() * 100);
 document.getElementById("math-sign").textContent = random_sign();
 
-document.getElementById("get-bet").addEventListener("click", function() 
+document.getElementById("get-bet").addEventListener("click", function () 
 {
     let num1 = document.getElementById("math-num1").textContent;
     let num2 = document.getElementById("math-num2").textContent;
@@ -20,11 +20,13 @@ document.getElementById("get-bet").addEventListener("click", function()
 
     let result = Number(document.getElementById("in-bet").value);
 
-    if (result === Math.floor(eval(calc))) {
+    if (result === Math.floor(eval(calc))) 
+    {
         document.getElementById("result-par").textContent = "Correct!!";
-    } else {
-        document.getElementById("result-par").textContent = "Not Correct!! result is: " + Math.floor(eval(calc));
-    }
+        setTimeout(() => location.reload(), 5000);
+    } 
+    else 
+        document.getElementById("result-par").textContent = "Not Correct!! Try Again";
 });
 
 document.getElementById("reload").addEventListener("click", function()
